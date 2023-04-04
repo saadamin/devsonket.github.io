@@ -138,6 +138,10 @@
                     "code": "php artisan migrate:fresh --seed"
                 },
                 {
+                    "definition": "সীডারকে জোর করে রান করতে, আপনার প্রোডাকশন ডাটাবেসের বিরুদ্ধে সিডিং কমান্ড চালানো থেকে আপনাকে রক্ষা করার জন্য, ডেভেলপমেন্ট পরিবেশে সিডারগুলি কার্যকর করার আগে আপনাকে নিশ্চিতকরণের জন্য অনুরোধ করা হবে। সিডারগুলিকে প্রম্পট ছাড়াই চালাতে বাধ্য করতে, --force ফ্লাগ ব্যবহার করুন:",
+                    "code": "php artisan db:seed --force"
+                },
+                {
                     "definition": "ডাটাবেসে নির্দিষ্ট টেবিল মাইগ্রেট করা",
                     "code": "php artisan migrate --path=/database/migrations/full_migration_file_name_migration.php"
                 }
